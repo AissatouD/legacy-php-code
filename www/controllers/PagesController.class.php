@@ -1,4 +1,8 @@
 <?php
+namespace controllers;
+
+use View;
+
 class PagesController{
 	
 	public function defaultAction(){

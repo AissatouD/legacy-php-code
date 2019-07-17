@@ -1,4 +1,9 @@
 <?php
+namespace controllers;
+
+use Users;
+use Validator;
+use View;
 
 class UsersController{
 

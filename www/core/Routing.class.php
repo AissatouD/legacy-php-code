@@ -1,4 +1,6 @@
 <?php
+namespace core;
+
 class Routing{
 
 	public static $routeFile = "routes.yml";
