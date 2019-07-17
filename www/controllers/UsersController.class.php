@@ -1,9 +1,11 @@
 <?php
 namespace controllers;
 
-use Users;
-use Validator;
-use View;
+
+
+use core\Validator;
+use core\View;
+use models\Users;
 
 class UsersController{
 

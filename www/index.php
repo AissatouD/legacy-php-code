@@ -7,8 +7,8 @@ require "conf.inc.php";
 
 function myAutoloader($class){
 
-	$classPath = str_replace('\\', DIRECTORY_SEPARATOR, $class).'class.php';
-    $classModel = str_replace('\\', DIRECTORY_SEPARATOR, $class).'class.php';
+	$classPath = str_replace('\\', DIRECTORY_SEPARATOR, $class).'.class.php';
+    $classModel = str_replace('\\', DIRECTORY_SEPARATOR, $class).'.class.php';
 
 	if(file_exists($classPath)){
 		include $classPath;
@@ -27,6 +27,9 @@ extract($routes);
 
 // Vérifie l'existence du fichier et de la classe pour charger le controlleur
 if( file_exists($cPath) ){
+
+    $c = 'controllers\\'.$c;
+
 	include $cPath;
 	if( class_exists($c)){
 		//instancier dynamiquement le controller

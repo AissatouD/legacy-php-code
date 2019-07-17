@@ -1,7 +1,11 @@
 <?php
+
+
 namespace controllers;
 
-use View;
+
+
+use core\View;
 
 class PagesController{
 	
